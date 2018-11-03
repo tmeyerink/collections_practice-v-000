@@ -17,3 +17,7 @@ def sort_array_char_count(arr)
 end
 
 def swap_elements(arr)
+  replace = [arr[0], arr[2], arr[1]]
+  return replace
+end
+
