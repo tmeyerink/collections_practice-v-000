@@ -26,4 +26,33 @@ def reverse_array(arr)
 end
 
 def kesha_maker(arr)
-  
+  new_arr = []
+  arr.each do |curr|
+    curr[2] = "$"
+    new_arr << curr
+  end
+  new_arr
+end
+
+def find_a(arr)
+  new_arr = []
+  arr.each do |curr|
+    if curr[0] == "a"
+      new_arr << curr
+    end
+    new_arr
+  end
+end
+
+def sum_array(arr)
+  arr.reduce(:+)
+end
+def add_s(arr)
+  count = 0 
+  arr.each do |curr|
+    #count == 1 ? next: curr.concat("s")
+    curr.concat("s") unless count == 1 
+    cound += 1 
+  end
+end
+
